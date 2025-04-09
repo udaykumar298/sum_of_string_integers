@@ -1,6 +1,5 @@
 class SumOfIntegersInString
   def self.add(numbers)
-    return 0 if numbers.empty?
-    numbers.to_i
+    numbers.scan(/\d+/).map(&:to_i).sum
   end
 end
